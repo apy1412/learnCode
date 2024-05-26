@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__section--wrapper {
+  padding: 3rem 2.5rem;
+  background: rgb(3, 25, 82);
+}
+.hero__section--wrapper h1 {
+  font-size: 5rem;
+  /* max-width: 70%; */
+  margin-bottom: 3rem;
+}
+.hero__section p {
+  font-size: 1.8rem;
+  max-width: 95%;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  margin: 3rem 0;
+  text-decoration: none;
+  color: #ffffff;
+  background: blue;
+  border-radius: 100px;
+}
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.662);
+}
+
+.hero__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin: 5rem 0;
+}
+.hero__feature {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid rgb(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.hero__feature--icon {
+  width: 25px;
+  height: 25px;
+}
+
+.petList {
+  color: #000000a8;
+  padding: 3rem 2.5rem;
+}
+
+.btn-link {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: rgb(128, 128, 128, 0.5);
+}
+.btn-selected {
+  color: rgb(0, 0, 255, 0.5);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+.petList__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 5rem 0;
+}
+.pet__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border: 1px solid rgba(110, 109, 109, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.pet__image {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+
+  .pet__image img {
+    transform: scale(0.5rem);
+  }
+}
+.pet__content {
+  grid-column: 2/3;
+  padding: 0.5rem;
+}
+.petList__wrapper {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+}
+
+.pet__card p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 675px) {
+  .hero__section--wrapper h1 {
+    max-width: 60%;
+    font-size: 6rem;
+  }
+  .hero__section p {
+    max-width: 65%;
+  }
+}
