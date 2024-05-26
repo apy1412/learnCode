@@ -118,10 +118,6 @@ img {
 .pet__image {
   grid-column: 1/2;
   grid-row: 1/-1;
-
-  .pet__image img {
-    transform: scale(0.5rem);
-  }
 }
 .pet__content {
   grid-column: 2/3;
@@ -130,7 +126,7 @@ img {
 .petList__wrapper {
   display: flex;
   width: 100%;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .pet__card p {
