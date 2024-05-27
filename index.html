@@ -113,9 +113,11 @@
     <section class="petList" id="viewPets">
       <h2>Meet our pets</h2>
       <div class="petList__wrapper">
-        <button class="btn btn-link btn-selected">View All</button>
-        <button class="btn btn-link">Only Dogs</button>
-        <button class="btn btn-link">Only Cats</button>
+        <button class="btn btn-link btn-selected" data-filter="all">
+          View All
+        </button>
+        <button class="btn btn-link" data-filter="dog">Only Dogs</button>
+        <button class="btn btn-link" data-filter="cat">Only Cats</button>
       </div>
 
       <div class="petList__grid">
