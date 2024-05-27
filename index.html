@@ -39,7 +39,7 @@
           <h3>why</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
-            dolorem!
+            dolorem!the temperature is <span class="temperature"></span> F
           </p>
         </div>
         <div class="hero__feature">
@@ -113,77 +113,34 @@
     <section class="petList" id="viewPets">
       <h2>Meet our pets</h2>
       <div class="petList__wrapper">
-        <button class="btn btn-link btn-selected">View All</button>
-        <button class="btn btn-link">Only Dogs</button>
-        <button class="btn btn-link">Only Cats</button>
+        <button class="btn btn-link btn-selected" data-filter="all">
+          View All
+        </button>
+        <button class="btn btn-link" data-filter="dog">Only Dogs</button>
+        <button class="btn btn-link" data-filter="cat">Only Cats</button>
       </div>
 
       <div class="petList__grid">
-        <div class="pet__card">
-          <div class="pet__content">
-            <h3>Geodo</h3>
+        <template id="petTemplate">
+          <div class="pet__card">
+            <div class="pet__content">
+              <h3>Geodo</h3>
 
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              assumenda dicta iure consectetur at tempora saepe veritatis!
-              Quaerat, officiis exercitationem! Cumque, magnam tenetur minus
-              deleniti nisi quaerat dolor illum reiciendis.
-            </p>
-            <p class="age">2 years</p>
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia assumenda dicta iure consectetur at tempora saepe
+                veritatis! Quaerat, officiis exercitationem! Cumque, magnam
+                tenetur minus deleniti nisi quaerat dolor illum reiciendis.
+              </p>
+              <p class="age">2 years</p>
+            </div>
+            <div class="pet__image">
+              <img src="images/dog1.jpeg" alt="" />
+            </div>
           </div>
-          <div class="pet__image">
-            <img src="images/dog1.jpeg" alt="" />
-          </div>
-        </div>
-        <div class="pet__card">
-          <div class="pet__content">
-            <h3>Kelly</h3>
-
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              assumenda dicta iure consectetur at tempora saepe veritatis!
-              Quaerat, officiis exercitationem! Cumque, magnam tenetur minus
-              deleniti nisi quaerat dolor illum reiciendis.
-            </p>
-            <p class="age">2 years</p>
-          </div>
-          <div class="pet__image">
-            <img src="images/dog2.jpeg" alt="" />
-          </div>
-        </div>
-        <div class="pet__card">
-          <div class="pet__content">
-            <h3>Daisy</h3>
-
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              assumenda dicta iure consectetur at tempora saepe veritatis!
-              Quaerat, officiis exercitationem! Cumque, magnam tenetur minus
-              deleniti nisi quaerat dolor illum reiciendis.
-            </p>
-            <p class="age">2 years</p>
-          </div>
-          <div class="pet__image">
-            <img src="images/cat1.jpeg" alt="" />
-          </div>
-        </div>
-        <div class="pet__card">
-          <div class="pet__content">
-            <h3>Meo</h3>
-
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              assumenda dicta iure consectetur at tempora saepe veritatis!
-              Quaerat, officiis exercitationem! Cumque, magnam tenetur minus
-              deleniti nisi quaerat dolor illum reiciendis.
-            </p>
-            <p class="age">2 years</p>
-          </div>
-          <div class="pet__image">
-            <img src="images/cat2.jpeg" alt="" />
-          </div>
-        </div>
+        </template>
       </div>
     </section>
   </body>
 </html>
+https://api.weather.gov/points/40.73556866881568,-74.17158474627941
